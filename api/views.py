@@ -51,3 +51,15 @@ def create_order():
 def fetch_all_orders():
     Orders = [order.get_dict() for order in orders]
     return jsonify({'message': Orders}), 200
+
+
+@app.route('/api/v1/orders/<int:order_id>', methods=['GET'])
+def get_order_id(order_id):
+    single_order = []
+    if order_id == 0 or order_id > len(orders):
+        return jsonify({"message": "Index out of range"}), 400 
+
+    if order_id != 0 and order_id <= len(orders):
+        order = orders[order_id - 1]
+        single_order.append(order.get_dict())
+        return jsonify({'Order': single_order, 'status': 'Succeeded'}), 200
