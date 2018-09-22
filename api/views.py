@@ -57,8 +57,8 @@ def fetch_all_orders():
 def get_order_id(order_id):
     single_order = []
     if order_id == 0 or order_id > len(orders):
-        return jsonify({"message": "Index out of range"}), 400
-    
+        return jsonify({"message": "Index out of range"}), 400 
+
     if order_id != 0 and order_id <= len(orders):
         order = orders[order_id - 1]
         single_order.append(order.get_dict())
