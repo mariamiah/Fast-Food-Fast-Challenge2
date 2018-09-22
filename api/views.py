@@ -45,3 +45,9 @@ def create_order():
         return jsonify({"Message": "Order successfully placed!"}), 201
     except ValueError:
         return jsonify({"Message": "Invalid fields"}), 400
+
+
+@app.route('/api/v1/orders', methods=['GET'])
+def fetch_all_orders():
+    Orders = [order.get_dict() for order in orders]
+    return jsonify({'message': Orders}), 200
