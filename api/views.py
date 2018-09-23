@@ -1,4 +1,4 @@
-from flask import request, jsonify
+from flask import request, jsonify, json
 from api.models import Order
 from api import app
 
@@ -63,3 +63,8 @@ def get_order_id(order_id):
         order = orders[order_id - 1]
         single_order.append(order.get_dict())
         return jsonify({'Order': single_order, 'status': 'Succeeded'}), 200
+
+
+@app.route('/api/v1/orders/<int:order_id>', methods=['PUT'])
+def update_specific_order(order_id):
+    pass
