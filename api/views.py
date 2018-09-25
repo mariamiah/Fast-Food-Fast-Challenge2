@@ -67,4 +67,12 @@ def get_order_id(order_id):
 
 @app.route('/api/v1/orders/<int:order_id>', methods=['PUT'])
 def update_specific_order(order_id):
-    pass
+    if order_id == 0 or order_id > len(orders):
+        return jsonify({"message": "Index out of range"})
+    data = request.get_json()
+    for order in orders:
+        if int(order.order_id) == int(order_id):
+            order.order_name = data['order_name']
+            order.order_type = data['order_type']
+            order.user_name = data['user_name']
+    return jsonify({"message": "Successfully updated"}), 200
