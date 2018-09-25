@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/mariamiah/Fast-Food-Fast-Challenge2.svg?branch=develop)](https://travis-ci.org/mariamiah/Fast-Food-Fast-Challenge2)
 # Fast-Food-Fast-API
 
 Fast-Food-Fast is a food delivery service app for a restaurant.
