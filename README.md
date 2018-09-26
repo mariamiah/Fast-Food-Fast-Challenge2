@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/mariamiah/Fast-Food-Fast-Challenge2.svg?branch=develop)](https://travis-ci.org/mariamiah/Fast-Food-Fast-Challenge2)
 [![Coverage Status](https://coveralls.io/repos/github/mariamiah/Fast-Food-Fast-Challenge2/badge.svg?branch=develop)](https://coveralls.io/github/mariamiah/Fast-Food-Fast-Challenge2?branch=develop)
 [![Maintainability](https://api.codeclimate.com/v1/badges/94adf0e88e55c03f3bcd/maintainability)](https://codeclimate.com/github/mariamiah/Fast-Food-Fast-Challenge2/maintainability)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3262a3b2539d48e1b1096e58ac0f75f3)](https://www.codacy.com/app/mariamiah/Fast-Food-Fast-Challenge2?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mariamiah/Fast-Food-Fast-Challenge2&amp;utm_campaign=Badge_Grade)
 # Fast-Food-Fast-API
 
 Fast-Food-Fast is a food delivery service app for a restaurant.
