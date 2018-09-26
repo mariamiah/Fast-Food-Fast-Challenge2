@@ -29,3 +29,6 @@ class TestOrder(unittest.TestCase):
         self.order.user_name = "Esther"
         self.assertEqual(self.order.user_name, "Esther", "username is now\
                          Esther")
+
+    def test_order_class(self):
+        self.assertIsInstance(self.order, Order)
