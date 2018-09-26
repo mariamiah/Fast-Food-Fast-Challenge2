@@ -38,3 +38,6 @@ class TestUser(unittest.TestCase):
         self.user.password = "1289"
         self.assertEqual(self.user.password, "1289", "password has changed  to\
                          1289")
+
+    def test_object(self):
+        self.assertIsInstance(self.user, User)
